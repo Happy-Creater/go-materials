@@ -1,0 +1,17 @@
+@import "../../assets/theme";
+
+.content {
+  background: #F8F8F8 0% 0% no-repeat padding-box;
+}
+
+.pt-43 {
+  padding-top: 43px;
+}
+
+.main-layout {
+  @include flex(height, 100vh);
+}
+
+gm-header {
+  top: 0;
+}

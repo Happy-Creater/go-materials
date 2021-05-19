@@ -1,0 +1,15 @@
+$header-height: 65px;
+
+.sidebar {
+  background-color: #282828;
+  height: 100%;
+  width: 183px;
+  top: 0;
+  &.collapsed {
+    width: 0;
+  }
+}
+
+.header {
+  height: $header-height;
+}

@@ -1,0 +1,41 @@
+<div class="d-flex flex-column user-panel">
+  <div class="breadcrumb">
+      <span >User Management</span> <span class="breadcrumb-symbol">&gt;</span> <span>All Users</span>
+  </div>
+  <div class="users-table-wrapper py-25 px-35 flex-grow-1 d-flex flex-column  bg-color-white">
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <span class="font-19 font-weight-medium">All Users</span>
+      <div class="position-relative search-div">
+        <input type="text" class="search-box" placeholder="Search Items">
+        <span class="position-absolute search-icon"><img src="assets/icons/search-icon.svg" alt="Search Icon"/></span>
+      </div>
+    </div>
+    <div class="d-flex mt-30 font-8 bg-color-concrete color-dusty-gray btl-radius-10 btr-radius-10 pr-15">
+      <span class="pt-10 pb-10 width-percent-9 pl-10">ID # <i class="pi pi-arrow-down color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-11">Name  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-16">Company  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-18">Email  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-8">UserType  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-10">State/Provice  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-10">Phone Number  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-7">Status  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pt-10 pb-10 width-percent-8">Date Created  <i class="pi pi-sort-alt color-jade"></i></span>
+      <span class="pr-10 width-percent-4"></span>
+    </div>
+    <div class="pretty-scroll flex-grow-1 fake-container w-100">
+      <div *ngFor="let item of fakeData; let i = index" class="d-flex overflow-hidden {{i % 2 == 1? 'odd' : 'even'}}">
+        <div class="width-percent-9 pl-10 text-overflow-ellipsis overflow-hidden">{{i | leadZero: 4}}</div>
+        <div class="width-percent-11 text-overflow-ellipsis overflow-hidden">John Smith</div>
+        <div class="width-percent-16 text-overflow-ellipsis overflow-hidden">McCarey's Landscaping, Inc.</div>
+        <div class="width-percent-18 text-overflow-ellipsis overflow-hidden">Johnsmith@mccareys.com</div>
+        <div class="width-percent-8 text-overflow-ellipsis overflow-hidden">Buyer</div>
+        <div class="width-percent-10 text-overflow-ellipsis overflow-hidden">New York, USA</div>
+        <div class="width-percent-10 text-overflow-ellipsis overflow-hidden">555-555-5555</div>
+        <div class="width-percent-7 text-overflow-ellipsis overflow-hidden">Active</div>
+        <div class="width-percent-8 text-overflow-ellipsis overflow-hidden">02/03/2019</div>
+        <div class="width-percent-4 text-overflow-ellipsis overflow-hidden">...</div>
+      </div>
+    </div>
+
+  </div>
+</div>
